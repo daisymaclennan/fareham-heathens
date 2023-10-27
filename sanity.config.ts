@@ -3,6 +3,7 @@
  */
 
 import { visionTool } from '@sanity/vision'
+import { myStructure } from 'deskStructure'
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
 import {
@@ -20,7 +21,6 @@ import {
   projectId,
 } from '~/lib/sanity.api'
 import { schema } from '~/schemas'
-import { myStructure } from 'deskStructure'
 
 const iframeOptions = {
   url: defineUrlResolver({
@@ -33,8 +33,8 @@ const iframeOptions = {
 
 export default defineConfig({
   basePath: '/studio',
-  name: 'project-name',
-  title: 'Project Name',
+  name: 'fareham-heathens',
+  title: 'Fareham Heathens',
   projectId,
   dataset,
   //edit schemas in './src/schemas'
